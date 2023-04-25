@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    /* 기본마진초기회   */
+    margin: 0px;
+}
+
+.background {
+    width: 1024px;
+    height: 600px;
+
+    /* background-color: bisque; */
+    /* Content 시계방향 여백 */
+    background-image: url("../images/background.png");
+    padding: 20px 0px 0px 20px;
+}
+
+.outerbox {
+    width: 808px;
+    height: 544px;
+
+    background-image: url("../images/outerbox.png");
+    /* background-color: tomato; */
+}
+
+
+.wrapper{
+    display: flex;
+
+    /* 수평정렬 */
+    flex-direction: row;        
+    padding: 32px 0px 0px 32px;
+}
+
+.wrapper_left{
+    width: 208px;
+    height: 472px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: bisque;
+}
+
+.wrapper_left_header{
+    width: 100%;
+    height: 30px;
+
+    display: flex;           
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Span 태그들 모두 상속되서 폰트사이즈변경됨 */
+.today{        
+    font-size: 9px;    
+}
+
+/* flex 정렬일때 30픽셀만큼 빼고 100퍼센트 */
+.wrapper_left_body{
+    width: 100%;
+    height: 100%;  
+    
+    border: 1px solid gray;
+    border-radius: 15px;        
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* 정렬옵션 */
+    padding: 20px 30px;
+}
+
+.left_body_header{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.left_body_header_gray{
+    width: 148px;
+    height: 133px;
+    background-color: gainsboro;    
+}
+
+.left_body_header_line{
+    border-top:1px dotted black;
+
+    /* 상하 좌우여백 */
+    margin: 12px 0px;
+}
+
+
+.left_body_profile{
+    width: 148px;
+    height: 400px;
+    /* background-color: aliceblue; */
+
+    display: flex;
+    flex-direction: column;    
+}
+
+.body_profile_item{
+    width: 148px;
+    height: 20px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 7px;
+}
+
+.left_body_text{    
+    font-style: Bold;
+    font-size: 9px;
+    margin: 0px 12px;  
+}
+
+
+
+.left_body_footer{
+    width: 148px;
+    height: 124px;
+
+    margin: 12px 0px 0px 0px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.left_footer_text{    
+    font-style:normal;
+    font-size: 11px;
+}
+
+
+
+.wrapper_right{
+    width: 524px;
+    height: 472px;
+    background-color: tomato;
+}
